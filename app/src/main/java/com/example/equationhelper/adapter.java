@@ -3,6 +3,7 @@ package com.example.equationhelper;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Parcelable;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,6 +65,9 @@ public class adapter extends RecyclerView.Adapter<adapter.viewholder> {
         public viewholder(@NonNull View itemView) {
             super(itemView);
             t=itemView.findViewById(R.id.itemTextView);
+            t.setGravity(Gravity.CENTER_HORIZONTAL);
+            t.setGravity(Gravity.CENTER_VERTICAL);
+            t.setAlpha(0.8F);
         }
     }
 }
